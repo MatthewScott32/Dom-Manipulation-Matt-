@@ -1,34 +1,10 @@
-/*
-    This code will only return the first section component
-    even though there are three components with the same
-    class
-*/
-// const sectionEl = document.querySelector(".article__section")
-// console.log(sectionEl);
+const headerOne = document.querySelector(".article__header");
+console.log(headerOne);
 
-/*
-    This code will only return the third section component
-*/
-// const footerEl = document.querySelector(".article__footer")
-// console.log(footerEl);
+headerOne.textContent = 'Welcome to the Matt blog';
+console.log(headerOne);
 
-/*
-    Get reference to the section with the class of `smallText`
-    and remove that class. Then add a new class of `largeText`
-*/
-// const smallTextEl = document.querySelector(".smallText")
-// smallTextEl.classList.remove("smallText")
-// smallTextEl.classList.add("largeText")
-// console.log(smallTextEl);
-
-/*
-    This code will return all section components
-*/
-// const sectionEl = document.querySelectorAll(".article__section")
-// console.log(sectionEl);
-
-/*
-    This code will still only return the third section component
-*/
-const sectionEl = document.querySelectorAll(".article__footer")
-console.log(sectionEl);
+const headerTwo = document.querySelectorAll(".article__header");
+headerTwo.classList.remove(".article__header");
+headerTwo.classList.add(".article__header important");
+console.log(headerTwo);
